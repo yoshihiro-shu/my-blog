@@ -1,5 +1,5 @@
 baseURL = "https://example.com"
-title = "Technical Documentation"
+title = "Yossy's Notes"
 languageCode = "ja"
 theme = ["docsy"]
 
@@ -7,8 +7,8 @@ theme = ["docsy"]
 defaultContentLanguage = "ja"
 [languages]
 [languages.ja]
-title = "技術ドキュメント"
-description = "技術的な知見を共有するドキュメントサイト"
+title = "Yossy's Notes"
+description = "〜 学んだことを随時更新しています。 〜"
 languageName = "日本語"
 weight = 1
 [languages.ja.params]
@@ -39,3 +39,7 @@ enabled = true
   name = "ブログ"
   weight = 2
   url = "/blog/"
+[[menu.main]]
+  name = "お問い合わせ"
+  weight = 3
+  url = "https://docs.google.com/forms/d/e/1FAIpQLSeWO6HmGM87-AWIOEOZ0Dff9grPRfkfFgQXPLXVA6YwjbPQBg/viewform"
