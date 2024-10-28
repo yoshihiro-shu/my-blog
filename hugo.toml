@@ -39,8 +39,3 @@ enabled = true
   name = "ブログ"
   weight = 2
   url = "/blog/"
-[[menu.main]]
-  name = "ポスト"
-  weight = 3
-  url = "/posts/"
-
