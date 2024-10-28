@@ -1,3 +1,46 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://example.com"
+title = "Technical Documentation"
+languageCode = "ja"
+theme = ["docsy"]
+
+# 言語設定
+defaultContentLanguage = "ja"
+[languages]
+[languages.ja]
+title = "技術ドキュメント"
+description = "技術的な知見を共有するドキュメントサイト"
+languageName = "日本語"
+weight = 1
+[languages.ja.params]
+description = "日本語の説明"
+
+# Docsyテーマの設定
+[params]
+copyright = "Your Name"
+privacy_policy = "https://policies.google.com/privacy"
+
+# 右側のサイドバーの目次
+[params.ui]
+sidebar_menu_compact = true
+sidebar_menu_foldable = true
+sidebar_cache_limit = 10
+
+# 検索機能の有効化
+[params.ui.search]
+enabled = true
+
+# ナビゲーションバーの設定
+[menu]
+[[menu.main]]
+  name = "ドキュメント"
+  weight = 1
+  url = "/docs/"
+[[menu.main]]
+  name = "ブログ"
+  weight = 2
+  url = "/blog/"
+[[menu.main]]
+  name = "ポスト"
+  weight = 3
+  url = "/posts/"
+
