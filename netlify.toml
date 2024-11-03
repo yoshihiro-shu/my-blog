@@ -1,5 +1,5 @@
 [build]
-  command = "cd themes/docsy && git submodule update -f --init && cd ../.. && hugo"
+  command = "git submodule update --init --recursive --depth 1 && cd themes/docsy && cd ../.. && hugo"
   publish = "public"
 
 [build.environment]
