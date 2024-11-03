@@ -1,4 +1,9 @@
-# node_modules ディレクトリを無視する
-node_modules/
-public/
-resources/
+# Hugo output
+/public
+/resources/
+.hugo_build.lock
+
+# Netlify Functions build output
+package-lock.json
+/functions/
+/node_modules/
