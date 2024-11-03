@@ -1,2 +1,4 @@
 # node_modules ディレクトリを無視する
 node_modules/
+public/
+resources/

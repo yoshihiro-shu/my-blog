@@ -29,6 +29,19 @@ sidebar_cache_limit = 10
 [params.ui.search]
 enabled = true
 
+[params.links]
+# End user relevant links. These will show up on left side of footer and in the community page if you have one.
+[[params.links.user]]
+	name_key = "community_x_name"
+	url = "https://x.com/yoshihiro_shu"
+	icon = "fab fa-twitter"
+# Replace with fa-x-twitter once available
+
+[[params.links.developer]]
+	name_key = "community_github_name"
+	url = "https://github.com/yoshihiro-shu"
+	icon = "fab fa-github"
+
 # ナビゲーションバーの設定
 [menu]
 [[menu.main]]
