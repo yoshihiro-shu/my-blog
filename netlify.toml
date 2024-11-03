@@ -1,6 +1,6 @@
 [build]
 #   command = "cd themes/docsy && git submodule update -f --init && cd ../.. && hugo"
-  command = "git submodule update --init --recursive --depth 1 && make non-production-build && npx -y pagefind --site public"
+  command = "git submodule update --init --recursive --depth 1 && (cd themes/docsy && npm install) && npm install -D postcss postcss-cli autoprefixer && hugo"
   publish = "public"
 
 [build.environment]
