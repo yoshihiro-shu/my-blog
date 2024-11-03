@@ -4,6 +4,7 @@ languageCode = "ja"
 theme = ["docsy"]
 
 # 言語設定
+contentDir = "content/ja"
 defaultContentLanguage = "ja"
 [languages]
 [languages.ja]
@@ -51,19 +52,18 @@ no = 'Sorry to hear that. Please <a href="https://github.com/yoshihiro-shu/my-bl
 	url = "https://github.com/yoshihiro-shu"
 	icon = "fab fa-github"
 
+[params.mermaid]
+version = "10.9.0"
+
 # ナビゲーションバーの設定
 [menu]
 [[menu.main]]
-  name = "ドキュメント"
-  weight = 1
-  url = "/docs/"
-[[menu.main]]
   name = "ブログ"
-  weight = 2
+  weight = 1
   url = "/blog/"
 [[menu.main]]
   name = "お問い合わせ"
-  weight = 3
+  weight = 2
   url = "https://docs.google.com/forms/d/e/1FAIpQLSeWO6HmGM87-AWIOEOZ0Dff9grPRfkfFgQXPLXVA6YwjbPQBg/viewform"
 
 [markup]

@@ -1,18 +1,13 @@
 ---
-title: Home
-description: This is Yossy's Note.
+title: Docsy
+description: A Hugo theme for creating great technical documentation sites
 ---
 
 {{% blocks/cover title="Welcome to Docsy!" image_anchor="top" height="full" %}}
 {{% param description %}}
+{.display-6}
 
-私の技術ブログへようこそ！ここでは、最新の技術情報やプログラミングのヒントを共有しています。
-
-## 最近の投稿
-
-- [なんちゃってスクラムを導入してかなり恩恵を受けたのでふりかえりをしてみた](ja/blog/wannabe-scrum)
-
-<!-- <a class="btn btn-lg btn-primary me-3" href="about/">Learn More</a>
+<a class="btn btn-lg btn-primary me-3" href="about/">Learn More</a>
 <a class="btn btn-lg btn-secondary" href="docs/get-started/">Get started</a>
 {.p-initial .my-5}
 
@@ -44,6 +39,6 @@ We do a [Pull Request](https://github.com/google/docsy/pulls) contributions work
 
 {{% blocks/feature icon="fa-brands fa-x-twitter" title="Follow us on Twitter!" url="https://twitter.com/docsydocs" %}}
 Find out about new features and how our users are using Docsy.
-{{% /blocks/feature %}} -->
+{{% /blocks/feature %}}
 
 {{% /blocks/section %}}
