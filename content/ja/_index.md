@@ -7,8 +7,9 @@ description: This is Yossy's Note.
 
 ## 最近の投稿
 
+- [インデックス付与したらDBインスタンスを最大6台から2台に削減した話](/blog/db-instance-reduction-with-indexing)
+- [データ圧縮アルゴリズムを変えたらRedisの負荷を1/3改善した話](/blog/redis-load-reduction-with-compression-algorithm)
 - [なんちゃってスクラムを導入してかなり恩恵を受けたのでふりかえりをしてみた](/blog/wannabe-scrum)
-- [これだけは知っておきたいDNSについて](/blog/dns-basic-knowledge)
 
 ## 経歴
 
