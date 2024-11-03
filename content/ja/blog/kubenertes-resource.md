@@ -2,7 +2,7 @@
 title: "Kubernetesリソースメモ"
 date: 2023-01-18T12:00:00+09:00
 weight: 1
-tags: ["Kubernetes", "PostgreSQL"]
+tags: ["Kubernetes"]
 categories: ["imfra"]
 ---
 
