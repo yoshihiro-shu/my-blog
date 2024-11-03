@@ -4,7 +4,7 @@ languageCode = "ja"
 theme = ["docsy"]
 
 # 言語設定
-contentDir = "content/ja"
+# contentDir = "content/ja"
 defaultContentLanguage = "ja"
 defaultContentLanguageInSubdir = true
 [languages]
