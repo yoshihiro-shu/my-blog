@@ -78,6 +78,11 @@ version = "10.9.0"
   [markup.highlight]
     noClasses = false # Required for dark-mode
 
+[services]
+[services.googleAnalytics]
+# Fake ID in support of [params.ui.feedback]. The real GA ID is set in the Netlify config.
+id = "G-ZPZY7LHFE1"
+
 [module]
   [module.hugoVersion]
     extended = true
