@@ -8,13 +8,10 @@ categories: ["profile"]
 
 {{% blocks/section color="white" %}}
 
-## 課外活動
-
 ### OSSの貢献
 
-Redisのインターフェースを提供しているkey-value式のStorage DBのOSSに参画
-
-[PR](https://github.com/Kirov7/CouloyDB/pull/31)
+- Redisのインターフェースを提供しているkey-value式のStorage DBのOSSに参画 [PR](https://github.com/Kirov7/CouloyDB/pull/31)
+- connect-go [PR](https://github.com/connectrpc/connect-go/pull/786)
 
 ### CloudNative Days委員会に参加
 
