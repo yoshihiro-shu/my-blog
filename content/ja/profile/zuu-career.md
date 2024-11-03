@@ -1,9 +1,9 @@
 ---
-title: "これだけは知っておきたいDNSについて"
-date: 2023-07-30T12:00:00+09:00
+title: "株式会社ZUUの経験(2022年02月~2024年05月)"
+date: 2024-05-01T12:00:00+09:00
 weight: 1
-tags: ["dns", "infra", "network"]
-categories: ["infra"]
+tags: ["redume"]
+categories: ["profile"]
 ---
 
 {{% blocks/section color="white" %}}
@@ -452,74 +452,5 @@ categories: ["infra"]
 |terraform|上記のGCPサービスの実装|
 |CI tool|GCP Cloud Buildによる、Docker Imageの自動ビルド|
 |CD tool|Argo CD|
-
-## アイタックソリューションズ株式会社（バイト:2021/09-2022/01）
-
-職務: サーバーサイドエンジニア
-
-### 混雑状況判定システムの管理画面の実装
-
-|使用技術|使用サービス or フレームワーク|
-|---|-----|
-|Python3|Django RestFrameWork|
-|JavaScript|Vue.js|
-
-## 課外活動
-
-### OSSの貢献
-
-Redisのインターフェースを提供しているkey-value式のStorage DBのOSSに参画
-
-[PR](https://github.com/Kirov7/CouloyDB/pull/31)
-
-### CloudNative Days委員会に参加
-
-クラウドインフラに関するカンファレンスの[CloudNative Days Tokyo](https://event.cloudnativedays.jp/cndt2023)の運営として参画しました。
-
-[ハンズオン](https://cloudnativedays.jp/posts/cndt2023-co-handson-call)の監視ツールの章のコンテンツ作成を担当しました。
-
-## 社外プロジェクト
-<!-- * [運営に携わっているコミュニティ](そのコミュニティのconnpassやカンファレンスページのリンクとか)
-* [副業で携わっているサービス](そのサービスのランディングページのリンクとか) -->
-
-### 芸能人向けライブ配信サイトのプラットフォームの新規開発(2022/11-2023/02)
-
-ライブ配信サイトのプラットフォームの新規開発をバックエンドエンジニアとして参画しました。
-
-**実装した機能**
-
-主に会員機能を担当しました。
-
-- [JWTトークン](https://jwt.io/introduction)によるログイン、ログアウト機能
-- プロフィール登録、編集機能
-- フォロー機能
-
-|使用技術|使用サービス or フレームワーク|
-|---|-----|
-|Golang|gin|
-|TypeScript|Nextjs|
-|DB|My SQL|
-|Amazon Web Service|Route53, Amazon ECS|
-
-### 古本向けフリマサイトのプラットフォームの新規開発(2023/11-)
-
-古本向けフリマサイトの新規開発をフロントエンジニアとして参画しております。
-
-|使用技術|使用サービス or フレームワーク|
-|---|-----|
-|TypeScript|Nextjs|
-|DB|MongoDB|
-
-<!-- ### 過去の登壇資料
-* [Speaker Deck](Speaker Deckの自分の資料のページとか)
- -->
-<!-- ### 受賞歴
-* [イベント名と受賞した賞](イベントのランディングページのリンクや、結果がわかる記事など) -->
-
-### 執筆歴
-
-* [Qiita](https://qiita.com/yoshihiro-shu)
-* [テックブログ](https://yoshihiro-shu.com)
-* [note](https://note.com/yoshihiro_shu)
 
 {{% /blocks/section %}}
