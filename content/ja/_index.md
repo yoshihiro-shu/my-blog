@@ -7,6 +7,7 @@ description: This is Yossy's Note.
 
 ## 最近の投稿
 
-[なんちゃってスクラムを導入してかなり恩恵を受けたのでふりかえりをしてみた](/blog/wannabe-scrum)
+- [なんちゃってスクラムを導入してかなり恩恵を受けたのでふりかえりをしてみた](/blog/wannabe-scrum)
+- [これだけは知っておきたいDNSについて](/blog/dns-basic-knowledge)
 
 {{% /blocks/section %}}
