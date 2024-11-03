@@ -2,7 +2,6 @@
 title: "なんちゃってスクラムを導入してかなり恩恵を受けたのでふりかえりをしてみた"
 date: 2024-01-08T12:00:00+09:00
 weight: 1
-draft: true
 tags: ["Scurum", "Ajaile"]
 categories: ["Ajaile"]
 ---

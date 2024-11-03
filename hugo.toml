@@ -4,16 +4,15 @@ languageCode = "ja"
 theme = ["docsy"]
 
 # 言語設定
-# contentDir = "content/ja"
+contentDir = "content/ja"
 defaultContentLanguage = "ja"
-defaultContentLanguageInSubdir = false
+defaultContentLanguageInSubdir = true
 [languages]
 [languages.ja]
 title = "Yossy's Notes"
 languageName = "日本語"
 # description = "〜 学んだことを随時更新しています。 〜"
 weight = 1
-# contentDir = "content/ja"
 [languages.ja.params]
 description = "日本語の説明"
 
