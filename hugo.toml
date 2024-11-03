@@ -4,20 +4,22 @@ languageCode = "ja"
 theme = ["docsy"]
 
 # 言語設定
-contentDir = "content/ja"
+# contentDir = "content/ja"
 defaultContentLanguage = "ja"
+defaultContentLanguageInSubdir = false
 [languages]
 [languages.ja]
 title = "Yossy's Notes"
-description = "〜 学んだことを随時更新しています。 〜"
 languageName = "日本語"
+# description = "〜 学んだことを随時更新しています。 〜"
 weight = 1
+# contentDir = "content/ja"
 [languages.ja.params]
 description = "日本語の説明"
 
 # Docsyテーマの設定
 [params]
-copyright = "Your Name"
+copyright = "Yoshihiro Shu"
 privacy_policy = "https://policies.google.com/privacy"
 
 # 右側のサイドバーの目次
