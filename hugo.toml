@@ -77,5 +77,7 @@ version = "10.9.0"
     noClasses = false # Required for dark-mode
 
 [module]
+  [module.hugoVersion]
+    extended = true
   [[module.imports]]
     path = "github.com/FortAwesome/Font-Awesome"
