@@ -7,7 +7,7 @@ description: This is Yossy's Note.
 
 ## 経歴
 
-- [株式会社ZUUの経験(2022年02月~2024年05月)]
+- [株式会社ZUUの経験(2022年02月~2024年05月)](/profile/zuu-career)
 
 ## 最近の投稿
 
