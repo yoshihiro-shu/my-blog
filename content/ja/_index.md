@@ -18,5 +18,4 @@ description: This is Yossy's Note.
 - [副業における経験](/profile/side-job)
 - [コントリビューターとしての経験](/profile/contributer)
 
-
 {{% /blocks/section %}}

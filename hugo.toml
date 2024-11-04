@@ -60,12 +60,16 @@ version = "10.9.0"
 # ナビゲーションバーの設定
 [menu]
 [[menu.main]]
-  name = "ブログ"
+  name = "Blog"
   weight = 1
   url = "/blog/"
 [[menu.main]]
-  name = "お問い合わせ"
+  name = "Profile"
   weight = 2
+  url = "/profile/"
+[[menu.main]]
+  name = "お問い合わせ"
+  weight = 3
   url = "https://docs.google.com/forms/d/e/1FAIpQLSeWO6HmGM87-AWIOEOZ0Dff9grPRfkfFgQXPLXVA6YwjbPQBg/viewform"
 
 [markup]
