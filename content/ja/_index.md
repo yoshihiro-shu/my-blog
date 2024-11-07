@@ -11,6 +11,10 @@ description: This is Yossy's Note.
 - [データ圧縮アルゴリズムを変えたらRedisの負荷を1/3改善した話](/blog/redis-load-reduction-with-compression-algorithm)
 - [なんちゃってスクラムを導入してかなり恩恵を受けたのでふりかえりをしてみた](/blog/wannabe-scrum)
 
+## 登壇資料
+
+- [3プロトコルを実現するconnect-go / Fukuoka.go#20](https://speakerdeck.com/yoshihiro_shu/fukuoka-dot-go)
+
 ## 経歴
 
 - [自己紹介](/profile/introduction)
