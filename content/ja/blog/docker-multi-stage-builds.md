@@ -17,7 +17,7 @@ DockerImageのMulti-stage buildsをするとサイズがどのくらい落ちる
 - Docker学習中の人
 - Docker Imageを実装している人
 
-# 実験結果
+## 実験結果
 
 一目瞭然ですね。
 まさかの約370MBの違いもありました。
