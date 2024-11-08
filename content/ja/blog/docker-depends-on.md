@@ -8,16 +8,6 @@ categories: ["infra"]
 
 {{% blocks/section color="white" %}}
 
-## 自己紹介
-
-初めまして。私は都内でwebエンジニアをしています。
-
-今の会社にインターンとして経て、入社しました。
-
-業務では、Nuxtjs, Golang, Kubernetesを用いて運用保守開発や
-
-最近はPandasを用いてデータ分析など日々苦戦している若輩者です。
-
 ## 背景
 
 Dockerの`depends_on`について、簡単に学んだことをまとめました。
