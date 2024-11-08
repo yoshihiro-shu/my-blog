@@ -1,5 +1,5 @@
 ---
-title: "[検証]Multi-stage buildsにしたらめっちゃDocker Imageのサイズが小さくなった話~Golang編~"
+title: "[検証]DockerのMulti-stage builds"
 date: 2023-03-18T12:00:00+09:00
 weight: 1
 tags: ["Go", "Docker", "dockerfile"]
