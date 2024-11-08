@@ -2,7 +2,7 @@
 title: "自己紹介"
 date: 2024-05-01T12:00:00+09:00
 weight: 1
-tags: ["redume", "introduction"]
+tags: ["resume", "introduction"]
 categories: ["profile"]
 ---
 

@@ -2,7 +2,7 @@
 title: "株式会社ZUUの経験(2022年02月~2024年05月)"
 date: 2024-05-01T12:00:00+09:00
 weight: 1
-tags: ["redume"]
+tags: ["resume"]
 categories: ["profile"]
 ---
 

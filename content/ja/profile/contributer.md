@@ -2,7 +2,7 @@
 title: "コントリビューターとしての経験"
 date: 2024-05-01T12:00:00+09:00
 weight: 1
-tags: ["redume", "contributer"]
+tags: ["resume", "contributer"]
 categories: ["profile"]
 ---
 

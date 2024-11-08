@@ -2,7 +2,7 @@
 title: "副業における経験"
 date: 2024-05-01T12:00:00+09:00
 weight: 1
-tags: ["redume"]
+tags: ["resume"]
 categories: ["profile"]
 ---
 
