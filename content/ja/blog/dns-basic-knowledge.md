@@ -1,5 +1,5 @@
 ---
-title: "これだけは知っておきたいDNSについて"
+title: "これだけは知っておきたいDNS"
 date: 2023-07-30T12:00:00+09:00
 weight: 1
 tags: ["dns", "infra", "network"]
