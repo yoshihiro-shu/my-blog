@@ -64,12 +64,8 @@ version = "10.9.0"
   weight = 1
   url = "/blog/"
 [[menu.main]]
-  name = "Profile"
-  weight = 2
-  url = "/profile/"
-[[menu.main]]
   name = "お問い合わせ"
-  weight = 3
+  weight = 2
   url = "https://docs.google.com/forms/d/e/1FAIpQLSeWO6HmGM87-AWIOEOZ0Dff9grPRfkfFgQXPLXVA6YwjbPQBg/viewform"
 
 [markup]

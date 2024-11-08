@@ -42,5 +42,6 @@ categories: ["profile"]
 * [Qiita](https://qiita.com/yoshihiro-shu)
 * [テックブログ](https://yoshihiroshu.com)
 * [note](https://note.com/yoshihiro_shu)
+* [speakerdeck](https://speakerdeck.com/yoshihiro_shu)
 
 {{% /blocks/section %}}
