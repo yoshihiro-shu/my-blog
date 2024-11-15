@@ -7,6 +7,7 @@ description: This is Yossy's Note.
 
 ## 最近の投稿
 
+- [WIP制限とリードタイムの計測から始める今後の展望](/blog/future-prospects-wip-limit-lead-time)
 - [Four Keys 他社事例 01](/blog/four-keys-case-study-01)
 - [DBインスタンスを最大6台から2台に削減した話](/blog/db-instance-reduction)
 - [Redisの負荷を1/3改善した話](/blog/redis-load-reduction)
