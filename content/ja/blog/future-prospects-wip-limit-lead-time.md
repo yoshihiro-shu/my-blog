@@ -2,8 +2,8 @@
 title: "WIP制限とリードタイムの計測から始める今後の展望"
 date: 2024-11-15T12:00:00+09:00
 weight: 1
-tags: ["dns", "infra", "network"]
-categories: ["infra"]
+tags: ["management"]
+categories: ["management"]
 ---
 
 {{% blocks/section color="white" %}}
