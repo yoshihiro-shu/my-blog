@@ -1,0 +1,8 @@
+{{ $section := site.GetPage "/blog" }}
+{{ if $section }}
+<ul>
+  {{ range first (.Get "count" | default "5" | int) $section.Pages.ByDate.Reverse }}
+  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+  {{ end }}
+</ul>
+{{ end }}
