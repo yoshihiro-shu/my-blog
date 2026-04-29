@@ -2,8 +2,9 @@
 title: "なんちゃってスクラムを運用してみて"
 date: 2024-01-08T12:00:00+09:00
 weight: 1
-tags: ["Scurum", "Ajaile"]
-categories: ["Ajaile"]
+description: "なんちゃってスクラムをチームに導入・運用した経験から得た学びと反省をまとめています。"
+tags: ["Scrum", "Agile"]
+categories: ["Agile"]
 ---
 
 {{% blocks/section color="white" %}}

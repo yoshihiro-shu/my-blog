@@ -2,6 +2,7 @@
 title: "Dockerのdepends onについて"
 date: 2023-01-17T12:00:00+09:00
 weight: 1
+description: "Docker Composeのdepends_onの挙動と、サービス間の起動順序制御について解説します。"
 tags: ["Docker", "docker-compose"]
 categories: ["infra"]
 ---

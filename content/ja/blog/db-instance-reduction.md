@@ -2,6 +2,7 @@
 title: "DBインスタンスを最大6台から2台に削減した話"
 date: 2024-05-12T12:00:00+09:00
 weight: 1
+description: "AWSのDBインスタンスを最大6台から2台に削減した方法と、その過程で得た知見をまとめています。"
 tags: ["AWS", "PostgreSQL"]
 categories: ["infra"]
 ---

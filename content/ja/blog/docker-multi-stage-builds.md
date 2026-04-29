@@ -2,6 +2,7 @@
 title: "[検証]DockerのMulti-stage builds"
 date: 2023-03-18T12:00:00+09:00
 weight: 1
+description: "DockerのMulti-stage buildsを使ってGoアプリケーションのイメージサイズを削減する検証結果です。"
 tags: ["Go", "Docker", "dockerfile"]
 categories: ["infra"]
 ---

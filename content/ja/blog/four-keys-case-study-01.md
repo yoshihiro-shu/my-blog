@@ -2,6 +2,7 @@
 title: "Four Keys 他社事例 01"
 date: 2024-11-08T12:00:00+09:00
 weight: 1
+description: "Four Keysを活用した開発生産性改善の他社事例を調査・分析しました。"
 tags: ["Four Keys"]
 categories: ["management"]
 ---

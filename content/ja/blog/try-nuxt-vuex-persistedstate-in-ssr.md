@@ -2,6 +2,7 @@
 title: "Nuxtのvuex-persistedstateをSSRで使ってみる"
 date: 2022-12-04T12:00:00+09:00
 weight: 1
+description: "Nuxt.jsのSSR環境でvuex-persistedstateを使う方法と注意点をまとめています。"
 tags: ["cookie", "Vue.js", "Vuex", "ssr", "Nuxt"]
 categories: ["frontend"]
 ---

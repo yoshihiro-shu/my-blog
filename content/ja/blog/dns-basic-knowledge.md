@@ -2,6 +2,7 @@
 title: "これだけは知っておきたいDNS"
 date: 2023-07-30T12:00:00+09:00
 weight: 1
+description: "DNSの基本的な仕組みや名前解決の流れなど、最低限押さえておきたい知識をまとめています。"
 tags: ["dns", "infra", "network"]
 categories: ["infra"]
 ---

@@ -2,6 +2,7 @@
 title: "Redisの負荷を1/3改善した話"
 date: 2023-12-16T12:00:00+09:00
 weight: 1
+description: "GoアプリケーションにおけるRedisの負荷を1/3に改善した手法と工夫を紹介します。"
 tags: ["Go", "Redis"]
 categories: ["infra"]
 ---

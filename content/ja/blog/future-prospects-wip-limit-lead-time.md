@@ -2,6 +2,7 @@
 title: "WIP制限とリードタイムの計測から始める今後の展望"
 date: 2024-11-15T12:00:00+09:00
 weight: 1
+description: "WIP制限とリードタイムの計測を最初の一歩として、チームの生産性を改善するための展望をまとめています。"
 tags: ["management"]
 categories: ["management"]
 ---
