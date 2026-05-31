@@ -1,0 +1,64 @@
+hero:
+  badge: Open to talk
+  name: Yossy
+  handle: "@yoshihiro_shu"
+  tagline: Web Engineer × Go × AI
+  affiliation: GMOペパボ株式会社
+  description: >-
+    バックエンドを中心に、要件定義から設計・実装・リリース・運用までを一貫して担当。
+    Go / TypeScript / AWS を主戦場に、最近はAI開発の生産性向上に取り組んでいます。
+
+about: >-
+  大学卒業後、株式会社ZUUにて金融メディアの開発・運用・保守に従事した後、
+  現在はGMOペパボ株式会社にてソフトウェアエンジニアとして勤務しております。
+  Go言語を中心としたバックエンド開発を軸に、要件定義から設計・実装・リリースまでを一貫して経験。
+  チームビルディングやプロジェクトマネジメントの経験もあります。
+
+skills:
+  - group: Backend
+    items: [Go, gRPC, Connect, PostgreSQL, MySQL, Redis]
+  - group: Frontend
+    items: [TypeScript, Next.js, Vue.js, Nuxt.js]
+  - group: Infra / Cloud
+    items: [AWS, Docker, Kubernetes, Terraform]
+  - group: Practice
+    items: [Scrum, Four Keys, OSS, Tech Talk]
+
+career:
+  - period: "2024.05 — 現在"
+    company: GMOペパボ株式会社
+    role: ソフトウェアエンジニア
+    summary: Goを中心としたバックエンド開発。AI活用・テスト戦略・四半期改善などにも貢献。
+    link: /profile/gmo-pepabo-career
+  - period: "2022.02 — 2024.05"
+    company: 株式会社ZUU
+    role: Webアプリケーションエンジニア
+    summary: 金融メディアの開発・運用・保守。レスポンスタイム改善やDBインスタンス削減など。
+    link: /profile/zuu-career
+  - period: "副業"
+    company: 複数社
+    role: Web開発（Go / TypeScript / Next.js 等）
+    summary: ライブ配信、混雑状況判定、古本フリマなど複数プロダクトに参画。
+    link: /profile/side-job
+
+talks:
+  - title: AI開発を加速するためにテスト戦略を言語化した
+    event: Go Connect #13
+    date: 2026-05
+    url: https://speakerdeck.com/yoshihiro_shu/aikai-fa-wojia-su-surutamenitesutozhan-lue-woyan-yu-hua-sita
+  - title: 3プロトコルを実現するconnect-go
+    event: Fukuoka.go #20
+    date: 2024
+    url: https://speakerdeck.com/yoshihiro_shu/fukuoka-dot-go
+
+socials:
+  - label: GitHub
+    url: https://github.com/yoshihiro-shu
+  - label: X
+    url: https://x.com/yoshihiro_shu
+  - label: Speakerdeck
+    url: https://speakerdeck.com/yoshihiro_shu
+  - label: Qiita
+    url: https://qiita.com/yoshihiro-shu
+  - label: note
+    url: https://note.com/yoshihiro_shu

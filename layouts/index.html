@@ -1,0 +1,137 @@
+{{ define "main" }}
+{{ $p := .Site.Data.portfolio }}
+{{ $blog := site.GetPage "/blog" }}
+
+<div class="portfolio">
+
+  <section class="portfolio-hero">
+    <div class="portfolio-hero__bg" aria-hidden="true">
+      <span class="portfolio-hero__orb portfolio-hero__orb--1"></span>
+      <span class="portfolio-hero__orb portfolio-hero__orb--2"></span>
+      <span class="portfolio-hero__orb portfolio-hero__orb--3"></span>
+    </div>
+    <div class="portfolio-container portfolio-hero__inner">
+      {{ with $p.hero.badge }}<span class="portfolio-hero__badge">● {{ . }}</span>{{ end }}
+      <h1 class="portfolio-hero__title">
+        <span class="portfolio-hero__name">{{ $p.hero.name }}</span>
+        <span class="portfolio-hero__handle">{{ $p.hero.handle }}</span>
+      </h1>
+      <p class="portfolio-hero__tagline">{{ $p.hero.tagline }}</p>
+      <p class="portfolio-hero__sub">{{ $p.hero.affiliation }} ／ {{ $p.hero.description }}</p>
+      <div class="portfolio-hero__cta">
+        <a class="portfolio-btn portfolio-btn--primary" href="/ja/resume/">職務経歴書を見る</a>
+        <a class="portfolio-btn portfolio-btn--ghost" href="/ja/blog/">Blog</a>
+      </div>
+      <ul class="portfolio-hero__links">
+        {{ range $p.socials }}
+        <li><a href="{{ .url }}" target="_blank" rel="noopener">{{ .label }} ↗</a></li>
+        {{ end }}
+      </ul>
+    </div>
+  </section>
+
+  <section class="portfolio-section" id="about">
+    <div class="portfolio-container">
+      <div class="portfolio-section__head">
+        <span class="portfolio-section__eyebrow">01 / About</span>
+        <h2 class="portfolio-section__title">経歴サマリ</h2>
+      </div>
+      <p class="portfolio-section__lead">{{ $p.about }}</p>
+      <a class="portfolio-link" href="/ja/profile/introduction/">自己紹介を読む →</a>
+    </div>
+  </section>
+
+  <section class="portfolio-section portfolio-section--alt" id="skills">
+    <div class="portfolio-container">
+      <div class="portfolio-section__head">
+        <span class="portfolio-section__eyebrow">02 / Skills</span>
+        <h2 class="portfolio-section__title">Tech Stack</h2>
+      </div>
+      <div class="portfolio-skills">
+        {{ range $p.skills }}
+        <div class="portfolio-skills__group">
+          <h3 class="portfolio-skills__group-title">{{ .group }}</h3>
+          <ul class="portfolio-skills__items">
+            {{ range .items }}
+            <li class="portfolio-skills__chip">{{ . }}</li>
+            {{ end }}
+          </ul>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio-section" id="career">
+    <div class="portfolio-container">
+      <div class="portfolio-section__head">
+        <span class="portfolio-section__eyebrow">03 / Career</span>
+        <h2 class="portfolio-section__title">Timeline</h2>
+      </div>
+      <ol class="portfolio-timeline">
+        {{ range $p.career }}
+        <li class="portfolio-timeline__item">
+          <span class="portfolio-timeline__dot"></span>
+          <div class="portfolio-timeline__body">
+            <span class="portfolio-timeline__period">{{ .period }}</span>
+            <h3 class="portfolio-timeline__company">{{ .company }}</h3>
+            <p class="portfolio-timeline__role">{{ .role }}</p>
+            <p class="portfolio-timeline__summary">{{ .summary }}</p>
+            {{ with .link }}<a class="portfolio-link" href="{{ . }}">詳細 →</a>{{ end }}
+          </div>
+        </li>
+        {{ end }}
+      </ol>
+    </div>
+  </section>
+
+  {{ if $blog }}
+  <section class="portfolio-section portfolio-section--alt" id="posts">
+    <div class="portfolio-container">
+      <div class="portfolio-section__head">
+        <span class="portfolio-section__eyebrow">04 / Writing</span>
+        <h2 class="portfolio-section__title">Recent Posts</h2>
+      </div>
+      <div class="portfolio-grid">
+        {{ range first 6 $blog.Pages.ByDate.Reverse }}
+        <a class="portfolio-card" href="{{ .RelPermalink }}">
+          <span class="portfolio-card__meta">{{ .Date.Format "2006.01.02" }}</span>
+          <h3 class="portfolio-card__title">{{ .Title }}</h3>
+          {{ with .Description }}<p class="portfolio-card__desc">{{ . }}</p>{{ end }}
+          <span class="portfolio-card__more">Read →</span>
+        </a>
+        {{ end }}
+      </div>
+      <a class="portfolio-link" href="/ja/blog/">すべての投稿を見る →</a>
+    </div>
+  </section>
+  {{ end }}
+
+  <section class="portfolio-section" id="talks">
+    <div class="portfolio-container">
+      <div class="portfolio-section__head">
+        <span class="portfolio-section__eyebrow">05 / Talks</span>
+        <h2 class="portfolio-section__title">登壇資料</h2>
+      </div>
+      <div class="portfolio-grid">
+        {{ range $p.talks }}
+        <a class="portfolio-card portfolio-card--talk" href="{{ .url }}" target="_blank" rel="noopener">
+          <span class="portfolio-card__meta">{{ .date }} · {{ .event }}</span>
+          <h3 class="portfolio-card__title">{{ .title }}</h3>
+          <span class="portfolio-card__more">Speakerdeck ↗</span>
+        </a>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio-section portfolio-section--cta" id="contact">
+    <div class="portfolio-container portfolio-cta">
+      <h2 class="portfolio-cta__title">お仕事のご相談・お問い合わせ</h2>
+      <p class="portfolio-cta__sub">登壇・執筆・技術相談・採用などお気軽にどうぞ。</p>
+      <a class="portfolio-btn portfolio-btn--primary" href="https://docs.google.com/forms/d/e/1FAIpQLSeWO6HmGM87-AWIOEOZ0Dff9grPRfkfFgQXPLXVA6YwjbPQBg/viewform" target="_blank" rel="noopener">お問い合わせフォーム →</a>
+    </div>
+  </section>
+
+</div>
+{{ end }}
