@@ -58,6 +58,7 @@ Webアプリケーションエンジニアとして、Go言語を中心とした
 
 - **Go Connect #13 にて登壇**「AI開発を加速するためにテスト戦略を言語化した」（2026年5月）
 - **Fukuoka.go にて登壇**「3プロトコルを実現するconnect-go」（2024年下期、参加者約25名）
+- **Pepabo Tech Blog（Zenn）にて寄稿**「[管理画面いらずの運用を実現するため、Protocol Buffers から MCPサーバーを生成するツールを作った](https://zenn.dev/pepabo/articles/0993da576b5336)」（2025年12月） — connect-go-mcp を OSS で公開
 - **Go勉強会の運営スタッフ**（2025年下期、計3回）
 - **CloudNative Days** カンファレンス運営委員会に参加
 - 社内輪読会での発表（型システムの仕組み、A Philosophy of Software Design 等、計6回以上）

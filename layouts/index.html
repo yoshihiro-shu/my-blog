@@ -151,11 +151,35 @@
   </section>
   {{ end }}
 
+  {{/* ─── ARTICLES (external) ─── */}}
+  {{ with $p.articles }}
+  <section class="portfolio-section" id="articles">
+    <div class="portfolio-container">
+      <div class="portfolio-section__head">
+        <span class="portfolio-section__eyebrow">05 / articles</span>
+        <h2 class="portfolio-section__title">寄稿したもの</h2>
+      </div>
+      <ol class="portfolio-archive portfolio-talks">
+        {{ range . }}
+        <li>
+          <a class="portfolio-archive__item" href="{{ .url }}" target="_blank" rel="noopener">
+            <span class="portfolio-archive__date">{{ .date }}</span>
+            <span><span class="portfolio-archive__title">{{ .title }}</span></span>
+            <span class="portfolio-archive__meta">{{ .platform }}</span>
+            <span class="portfolio-archive__arrow">↗</span>
+          </a>
+        </li>
+        {{ end }}
+      </ol>
+    </div>
+  </section>
+  {{ end }}
+
   {{/* ─── TALKS ─── */}}
   <section class="portfolio-section" id="talks">
     <div class="portfolio-container">
       <div class="portfolio-section__head">
-        <span class="portfolio-section__eyebrow">05 / talks</span>
+        <span class="portfolio-section__eyebrow">06 / talks</span>
         <h2 class="portfolio-section__title">話したもの</h2>
       </div>
       <ol class="portfolio-archive portfolio-talks">
