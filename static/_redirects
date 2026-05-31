@@ -1,0 +1,3 @@
+# Drop legacy /ja/ language prefix — single-language site
+# Permanent 301 redirect so search engines update their index
+/ja/*  /:splat  301!

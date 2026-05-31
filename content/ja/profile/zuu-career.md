@@ -18,11 +18,11 @@ categories: ["profile"]
 
 ## 経験したこと
 
-- [マネジメント経験](/ja/profile/zuu/management/)
-- [金融メディアのSTEP開発](/ja/profile/zuu/step-develop-financel-media/)
-- [金融メディアの運用保守開発](/ja/profile/zuu/devops-financal-media/)
-- [自社製品のリプレイス開発](/ja/profile/zuu/replace-product-mpcloud/)
-- [データ基盤の構築・運用](/ja/profile/zuu/develop-data-platform/)
-- [自社サービスのマニュアルサイトの開発](/ja/profile/zuu/develop-manual-site/)
+- [マネジメント経験](/profile/zuu/management/)
+- [金融メディアのSTEP開発](/profile/zuu/step-develop-financel-media/)
+- [金融メディアの運用保守開発](/profile/zuu/devops-financal-media/)
+- [自社製品のリプレイス開発](/profile/zuu/replace-product-mpcloud/)
+- [データ基盤の構築・運用](/profile/zuu/develop-data-platform/)
+- [自社サービスのマニュアルサイトの開発](/profile/zuu/develop-manual-site/)
 
 {{% /blocks/section %}}
