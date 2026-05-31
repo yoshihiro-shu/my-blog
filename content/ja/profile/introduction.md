@@ -30,5 +30,6 @@ categories: ["profile"]
 * [テックブログ](https://yoshihiroshu.com)
 * [note](https://note.com/yoshihiro_shu)
 * [speakerdeck](https://speakerdeck.com/yoshihiro_shu)
+* [Zenn / Pepabo Tech Blog](https://zenn.dev/pepabo/articles/0993da576b5336) — 管理画面いらずの運用を実現するため、Protocol Buffers から MCPサーバーを生成するツールを作った（2025年12月）
 
 {{% /blocks/section %}}

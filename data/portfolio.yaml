@@ -61,6 +61,12 @@ career:
     summary: ライブ配信、混雑状況判定、古本フリマなど複数プロダクトに参画。
     link: /profile/side-job/
 
+articles:
+  - title: 管理画面いらずの運用を実現するため、Protocol Buffers から MCPサーバーを生成するツールを作った
+    platform: Zenn · Pepabo Tech Blog
+    date: "2025.12.22"
+    url: https://zenn.dev/pepabo/articles/0993da576b5336
+
 talks:
   - title: AI開発を加速するためにテスト戦略を言語化した
     event: Go Connect #13

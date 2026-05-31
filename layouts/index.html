@@ -107,8 +107,8 @@
     </div>
   </section>
 
-  {{/* ─── WRITING ARCHIVE ─── */}}
-  {{ if $blog }}
+  {{/* ─── WRITING ARCHIVE (internal blog + external articles, merged & sorted) ─── */}}
+  {{ if or $blog $p.articles }}
   <section class="portfolio-section" id="writing">
     <div class="portfolio-container">
       <div class="portfolio-section__head">
@@ -116,31 +116,69 @@
         <h2 class="portfolio-section__title">書いたもの</h2>
       </div>
 
-      {{ $posts := first 8 $blog.Pages.ByDate.Reverse }}
-      {{ $years := $posts.GroupByDate "2006" }}
-      <ol class="portfolio-archive">
-        {{ range $years }}
-        <li class="portfolio-archive__year">
-          <span>{{ .Key }}</span>
-          <span></span>
-          <span class="portfolio-archive__count">{{ len .Pages }} posts</span>
-        </li>
-        {{ range .Pages }}
-        <li>
-          <a class="portfolio-archive__item" href="{{ .RelPermalink }}">
-            <span class="portfolio-archive__date">{{ .Date.Format "01.02" }}</span>
-            <span>
-              <span class="portfolio-archive__title">{{ .Title }}</span>
-              {{ with .Params.tags }}
-              <span class="portfolio-archive__tags">
-                {{ range first 3 . }}<span>{{ . }}</span>{{ end }}
-              </span>
-              {{ end }}
-            </span>
-            <span class="portfolio-archive__arrow">→</span>
-          </a>
-        </li>
+      {{/* unify internal blog posts and external articles into one list */}}
+      {{ $items := slice }}
+      {{ if $blog }}
+        {{ range $blog.Pages }}
+          {{ $items = $items | append (dict
+            "date" (.Date.Format "2006.01.02")
+            "year" (.Date.Format "2006")
+            "stamp" .Date.Unix
+            "title" .Title
+            "url" .RelPermalink
+            "tags" .Params.tags
+            "external" false
+            "platform" ""
+          ) }}
         {{ end }}
+      {{ end }}
+      {{ range $p.articles }}
+        {{/* .date format expected: YYYY.MM.DD — convert to YYYY-MM-DD for time parsing */}}
+        {{ $iso := replace .date "." "-" }}
+        {{ $t := time $iso }}
+        {{ $items = $items | append (dict
+          "date" ($t.Format "2006.01.02")
+          "year" ($t.Format "2006")
+          "stamp" $t.Unix
+          "title" .title
+          "url" .url
+          "tags" slice
+          "external" true
+          "platform" .platform
+        ) }}
+      {{ end }}
+
+      {{ $sorted := sort $items "stamp" "desc" }}
+      {{ $top := first 10 $sorted }}
+
+      {{ $sc := newScratch }}
+      {{ $sc.Set "lastYear" "" }}
+      <ol class="portfolio-archive">
+        {{ range $top }}
+          {{ if ne .year ($sc.Get "lastYear") }}
+          <li class="portfolio-archive__year">
+            <span>{{ .year }}</span>
+            <span></span>
+            <span></span>
+          </li>
+          {{ $sc.Set "lastYear" .year }}
+          {{ end }}
+          <li>
+            <a class="portfolio-archive__item" href="{{ .url }}"{{ if .external }} target="_blank" rel="noopener"{{ end }}>
+              <span class="portfolio-archive__date">{{ substr .date 5 10 }}</span>
+              <span>
+                <span class="portfolio-archive__title">{{ .title }}</span>
+                {{ if .external }}
+                <span class="portfolio-archive__tags"><span>{{ .platform }}</span></span>
+                {{ else }}{{ with .tags }}
+                <span class="portfolio-archive__tags">
+                  {{ range first 3 . }}<span>{{ . }}</span>{{ end }}
+                </span>
+                {{ end }}{{ end }}
+              </span>
+              <span class="portfolio-archive__arrow">{{ if .external }}↗{{ else }}→{{ end }}</span>
+            </a>
+          </li>
         {{ end }}
       </ol>
 
