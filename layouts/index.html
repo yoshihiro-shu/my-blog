@@ -77,7 +77,7 @@
             <h3 class="portfolio-timeline__company">{{ .company }}</h3>
             <p class="portfolio-timeline__role">{{ .role }}</p>
             <p class="portfolio-timeline__summary">{{ .summary }}</p>
-            {{ with .link }}<a class="portfolio-link" href="{{ . }}">詳細 →</a>{{ end }}
+            {{ with .link }}<a class="portfolio-link" href="{{ . | relLangURL }}">詳細 →</a>{{ end }}
           </div>
         </li>
         {{ end }}
