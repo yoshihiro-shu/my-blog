@@ -46,9 +46,10 @@ body.td-home {
 }
 
 .portfolio-container {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 0 2rem;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: clamp(1.5rem, 6vw, 8rem);
+  max-width: 1600px;
 }
 
 // ----- Hero -----
@@ -673,9 +674,10 @@ body.portfolio-page {
 }
 
 .portfolio-page__inner {
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: clamp(1.5rem, 6vw, 8rem);
+  max-width: 1400px;
 }
 
 .portfolio-page__header {
