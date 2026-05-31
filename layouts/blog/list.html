@@ -7,37 +7,38 @@
 
 <div class="portfolio-page__inner">
   <header class="portfolio-page__header">
-    <span class="portfolio-section__eyebrow">Blog</span>
+    <span class="portfolio-section__eyebrow">writing</span>
     <h1 class="portfolio-page__title">{{ .Title }}</h1>
     {{ with .Description }}<p class="portfolio-page__lead">{{ . }}</p>{{ end }}
   </header>
 
   {{ if .Pages -}}
   {{ $pag := .Paginate (($.Scratch.Get "blog-pages").GroupByDate "2006") -}}
-  {{ range $pag.PageGroups -}}
-  <section class="portfolio-blog-group">
-    <h2 class="portfolio-blog-group__year">{{ .Key }}</h2>
-    <div class="portfolio-grid portfolio-grid--blog">
-      {{ range .Pages -}}
-      <a class="portfolio-card" href="{{ .RelPermalink }}">
-        <span class="portfolio-card__meta">{{ .Date.Format "2006.01.02" }}</span>
-        <h3 class="portfolio-card__title">{{ .Title }}</h3>
-        {{ with .Description }}
-        <p class="portfolio-card__desc">{{ . }}</p>
-        {{ else }}
-        <p class="portfolio-card__desc">{{ .Plain | safeHTML | truncate 120 }}</p>
-        {{ end }}
-        {{ with .Params.tags }}
-        <div class="portfolio-card__tags">
-          {{ range first 4 . }}<span class="portfolio-card__tag">#{{ . }}</span>{{ end }}
-        </div>
-        {{ end }}
-        <span class="portfolio-card__more">Read →</span>
+  <ol class="portfolio-archive">
+    {{ range $pag.PageGroups -}}
+    <li class="portfolio-archive__year">
+      <span>{{ .Key }}</span>
+      <span></span>
+      <span class="portfolio-archive__count">{{ len .Pages }} posts</span>
+    </li>
+    {{ range .Pages -}}
+    <li>
+      <a class="portfolio-archive__item" href="{{ .RelPermalink }}">
+        <span class="portfolio-archive__date">{{ .Date.Format "01.02" }}</span>
+        <span>
+          <span class="portfolio-archive__title">{{ .Title }}</span>
+          {{ with .Params.tags }}
+          <span class="portfolio-archive__tags">
+            {{ range first 4 . }}<span>{{ . }}</span>{{ end }}
+          </span>
+          {{ end }}
+        </span>
+        <span class="portfolio-archive__arrow">→</span>
       </a>
-      {{ end -}}
-    </div>
-  </section>
-  {{ end -}}
+    </li>
+    {{ end -}}
+    {{ end -}}
+  </ol>
 
   <nav class="portfolio-pagination">
     {{ template "_internal/pagination.html" . }}

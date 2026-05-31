@@ -15,7 +15,7 @@
         {{ if not .IsHome }}
         <div class="portfolio-page__inner">
           <header class="portfolio-page__header">
-            <span class="portfolio-section__eyebrow">{{ if eq .Section "profile" }}Profile{{ else if eq .Section "resume" }}Resume{{ else }}{{ .Section | title }}{{ end }}</span>
+            <span class="portfolio-section__eyebrow">{{ if eq .Section "profile" }}profile{{ else if eq .Section "resume" }}resume{{ else }}{{ .Section }}{{ end }}</span>
             <h1 class="portfolio-page__title">{{ .Title }}</h1>
             {{ with .Description }}<p class="portfolio-page__lead">{{ . }}</p>{{ end }}
           </header>
